@@ -1,0 +1,78 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #222222;
+}
+
+header {
+  background-color: #1b6b93;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+nav {
+  background-color: white;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 2px solid #1b6b93;
+}
+
+nav li {
+  display: inline;
+  margin-right: 15px;
+}
+
+nav a {
+  color: #1b6b93;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  padding: 20px 0;
+  border-bottom: 1px solid #cccccc;
+}
+
+h2 {
+  color: #1b6b93;
+}
+
+h3 {
+  color: #1b6b93;
+}
+
+img {
+  max-width: 100%;
+}
+
+#seguranca img {
+  width: 80px;
+}
+
+#fundamentos img {
+  width: 260px;
+}
+
+#tipos img {
+  width: 220px;
+}
+
+#integracoes img {
+  width: 180px;
+}
+
+#ferramentas img {
+  width: 150px;
+}
+
+footer {
+  background-color: #1b6b93;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Miguel Belizario Amaro Lopes">
+  <meta name="description" content="APIs e Integrações">
+  <meta name="keywords" content="API e Integrações">
+  <title>APIs e Integrações</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>APIs e Integrações</h1>
+    <p>Conceitos, tipos, ferramentas e exemplos do desenvolvimento web moderno</p>
+  </header>
+
+
+  <nav>
+    <ul>
+      <li><a href="#introducao">Introdução</a></li>
+      <li><a href="#fundamentos">Fundamentos</a></li>
+      <li><a href="#tipos">Tipos de API</a></li>
+      <li><a href="#integracoes">Integrações</a></li>
+      <li><a href="#ferramentas">Ferramentas</a></li>
+      <li><a href="#seguranca">Segurança</a></li>
+      <li><a href="#conclusao">Conclusão</a></li>
+      <li><a href="#referencias">Referências</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section id="introducao">
+      <h2>1. Introdução</h2>
+      <p>
+        Praticamente nenhum sistema moderno funciona sozinho. Quando alguém paga uma
+        compra pelo celular ou entra em um aplicativo usando a conta do Google, existe
+        uma troca de mensagens entre programas diferentes acontecendo nos bastidores.
+        Essa troca acontece por meio de APIs (Interfaces de Programação de
+        Aplicações).
+      </p>
+      <p>
+        Uma API é o contrato que define como um software pode pedir dados ou serviços
+        de outro, sem precisar conhecer sua implementação interna.
+      </p>
+    </section>
+
+    <section id="fundamentos">
+      <h2>2. Fundamentos: o que é uma API</h2>
+      <p>
+        Uma API pode ser entendida como o cardápio de um restaurante: o cliente não
+        precisa entrar na cozinha, apenas escolhe uma opção e recebe o resultado
+        pronto. Na web, quem faz o pedido é o <strong>cliente</strong> e quem responde
+        é o <strong>servidor</strong>.
+      </p>
+
+      <h3>Elementos de uma requisição</h3>
+      <ul>
+        <li>Endpoint: endereço para onde a requisição é enviada.</li>
+        <li>Método HTTP: GET (ler), POST (criar), PUT (atualizar), DELETE (remover).</li>
+        <li>Cabeçalhos: informações extras, como as credenciais.</li>
+        <li>Corpo (body): os dados enviados, normalmente em JSON.</li>
+        <li>Código de status: informa se a resposta deu certo ou não.</li>
+      </ul>
+
+      <h3>Passo a passo</h3>
+      <ol>
+        <li>O cliente monta a requisição.</li>
+        <li>A requisição viaja até o servidor.</li>
+        <li>O servidor processa o pedido.</li>
+        <li>O servidor devolve uma resposta.</li>
+      </ol>
+      <img src="img/cliente-servidor.jpg" alt="Diagrama simples mostrando o cliente e o servidor trocando informações">
+    </section>
+
+    <section id="tipos">
+      <h2>3. Tipos de API</h2>
+      <img src="img/tipos-api.jpg" alt="Três círculos representando os diferentes tipos de API">
+
+      <h3>Quanto ao acesso</h3>
+      <ul>
+        <li>Públicas: abertas a qualquer desenvolvedor, como o ViaCEP.</li>
+        <li>De parceiros: usadas só por empresas conveniadas.</li>
+        <li>Privadas: usadas somente dentro da própria empresa.</li>
+      </ul>
+
+      <h3>Quanto ao estilo</h3>
+      <ul>
+        <li>REST: o estilo mais usado na web.</li>
+        <li>SOAP: mais antigo, comum em sistemas bancários.</li>
+        <li>GraphQL: o cliente escolhe exatamente os dados que quer.</li>
+        <li>gRPC: usado internamente entre sistemas, é bem rápido.</li>
+        <li>WebSocket: mantém uma conexão aberta, usado em chats.</li>
+      </ul>
+    </section>
+
+    <section id="integracoes">
+      <h2>4. Integrações</h2>
+      <img src="img/integracoes.jpg" alt="Dois círculos entrelaçados representando a integração entre sistemas">
+      <p>
+        Integrar é fazer sistemas diferentes trabalharem juntos. Alguns exemplos do
+        dia a dia:
+      </p>
+      <ul>
+        <li>Pagamentos: lojas virtuais usam APIs como Stripe ou Mercado Pago.</li>
+        <li>Login social: o botão "Entrar com o Google" usa OAuth 2.0.</li>
+        <li>Mapas: apps de entrega usam APIs de mapas para traçar rotas.</li>
+      </ul>
+    </section>
+
+    <section id="ferramentas">
+      <h2>5. Ferramentas</h2>
+      <ul>
+        <li>Postman: monta requisições sem precisar escrever código.</li>
+        <li>Swagger: gera documentação interativa de uma API.</li>
+        <li>cURL: comando usado para testar um endpoint rapidamente.</li>
+      </ul>
+    </section>
+
+    <section id="seguranca">
+      <h2>6. Segurança</h2>
+      <img src="img/cadeado.jpg" alt="Ícone de um cadeado de segurança">
+      <p>
+        As APIs lidam com dados sensíveis, então precisam de cuidado extra.
+      </p>
+      <ul>
+        <li>API Key: chave simples que identifica a aplicação.</li>
+        <li>OAuth 2.0: autoriza o acesso sem entregar a senha.</li>
+        <li>JWT: token que carrega os dados da sessão.</li>
+        <li>Usar sempre HTTPS.</li>
+      </ul>
+    </section>
+
+    <section id="conclusao">
+      <h2>7. Conclusão</h2>
+      <p>
+        As APIs deixaram de ser um detalhe técnico para se tornarem a base do
+        software atual. Entender como elas funcionam é essencial para quem trabalha
+        com desenvolvimento web.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>
+      Miguel Belizario Amaro Lopes<br>
+      Desenvolvimento Web (DWEB) — Atividade 3
+    </p>
+  </footer>
+
+</body>
+</html>
