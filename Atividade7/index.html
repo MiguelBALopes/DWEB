@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra, Papel e Tesoura</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>✊ Pedra, Papel e Tesoura</h1>
+
+        <p class="descricao">Escolha sua jogada e desafie o computador!</p>
+
+        <div class="botoes" id="botoes">
+            <button onclick="jogar('pedra')">✊</button>
+            <button onclick="jogar('papel')">✋</button>
+            <button onclick="jogar('tesoura')">✌️</button>
+        </div>
+
+        <h2 id="resultado">Faça sua escolha!</h2>
+
+        <br>
+
+        <div class="placar">
+
+            <div>
+                <h3>👤 Você</h3>
+                <p id="pontosUsuario">0</p>
+            </div>
+
+            <div>
+                <h3>💻 Computador</h3>
+                <p id="pontosComputador">0</p>
+            </div>
+
+        </div>
+
+        <button id="novamente" onclick="reiniciar()" style="display:none">
+            🔄 Jogar novamente
+        </button>
+
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
